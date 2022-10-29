@@ -1,0 +1,496 @@
+body {
+  background-image: url("https://www.pngplay.com/wp-content/uploads/2/Green-Leaves-No-Background.png"),url("https://www.pngplay.com/wp-content/uploads/2/Green-Leaves-No-Background.png"),
+    linear-gradient( to right, #caaded,#b3e9c7, #fff); 
+   background-position: left top, bottom right, cover;
+    background-repeat: no-repeat, no-repeat, repeat;
+      padding-bottom: 40px;
+}
+
+
+/*css for all text  */
+
+.title:hover {
+  font-size: 25px;
+  ransition: all .8s ease;
+-webkit-transition: all .8s ease;
+} 
+
+.title {
+  letter-spacing:2px;
+}
+@media (min-width: 768px) {
+.navbar-brand.abs
+    {
+        position: absolute;
+        width: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+}
+
+
+.green {
+  color:#588157;
+}
+
+
+.purple{
+  color: #995bd5;
+}
+
+.mission{
+  margin-top: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+  letter-spacing:2px;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px black, white;
+  }
+  to {
+    text-shadow: 0 0 10px black,white;
+  }
+}
+
+.fadeIn{
+  animation: fadeIn 5s;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.hands{
+margin-bottom:0px;
+margin-top:0px;
+border:solid pink;
+  padding:0px;
+  height:400px;
+}
+
+.probState{
+  margin-top: 100px;
+  margin-left: 70px;
+  margin-right: 70px;
+  letter-spacing:2px;
+  box-sizing:border-box;
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 20px;
+  background-color: #9AD28A;
+}
+
+.leafGif{
+  height: 100px;
+  margin: 10px;
+}
+
+.pic{
+  height: 100px;
+ justify-content:center;
+  display:inline-block;
+  
+}
+
+.olla{
+  display: inline-block;
+  height: 300px;
+}
+
+.sachi{
+  display:inline-block;
+   height: 300px;
+}
+
+.sophie{
+  display:inline-block;
+   height: 300px;
+   
+}
+
+.vicka{
+  display:inline-block;
+   height: 300px;
+}
+
+
+.factTitle {
+  margin-top: 100px;
+  color:#b185db;
+  font-family:Verdana;
+line-height: 27px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.arrow {
+  height: 100px;
+  margin-top: 10px;
+}
+
+/* css for about-us */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  background-color: #E5FAE5;
+  border-width: 13px;
+  border-color:#C1E1C1;
+  display: flex;
+  justify-content: center;
+  display: inline-block;
+
+}
+
+.cardImage {
+  object-fit: cover;
+  width: 275px;
+  height: 275px;
+}
+
+.cardText{
+  margin: 10px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+
+.cardImage:hover {
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    
+}
+
+.card:hover {
+  border-color:#caaded;
+   -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.aboutustitle {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.issues{
+  width: 300;
+  margin-top: 10px;
+  text-align:center;
+  font-family: monospace;
+  font-size: 5px;
+   border-style:solid;
+  border-color:#a663cc;
+  border-width:10px;
+  padding:20px;
+   background-image: url("https://images.unsplash.com/photo-1629196914168-3a2652305f9f?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb");
+  display: flex;
+    justify-content:center;
+
+}
+
+
+
+
+
+
+.text1{
+  font-family:monospace;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.text2{
+font-family:monospace;
+  font-size: 20px;
+  display: inline-block;
+  
+}
+
+
+/* all conetnt on global data page */
+
+
+.text {
+        position:relative;
+        line-height:2em;
+        overflow:hidden;
+         font-family: monospace;
+ font-size: 20px;
+  line-spacing: 2px;
+  font-color:#001219;
+  margin-top:100px;
+  margin-left:15%;
+  margin-right:15%;
+  border:black;
+  border-width:4px;
+  border-style:solid;
+  background:white;
+    }
+    .fadingEffect {
+        position:absolute;
+        top:0; bottom:0; right:0;
+        width:100%;
+        background:white;
+       
+        -webkit-animation: showHide 7s ease-in alternate infinite; 
+           -webkit-animation-fill-mode: backwards; 
+        animation: showHide 15s ease-in alternate infinite;
+      -webkit-animation-fill-mode: backwards; 
+
+    }
+    @-webkit-keyframes showHide { 
+        0% {width:100%}
+        40% {width:0%}
+        60% {width:0%;}
+        100% {width:100%;}
+    }
+    @-moz-keyframes showHide { 
+        0% {width:100%}
+        40% {width:0%}
+        60% {width:0%;}
+        100% {width:100%;}
+    }
+    @-ms-keyframes showHide {
+        0% {width:100%}
+        40% {width:0%}
+        60% {width:0%;}
+        100% {width:100%;}
+    }
+    @-o-keyframes showHide {
+        0% {width:100%}
+        40% {width:0%}
+        60% {width:0%;}
+        100% {width:100%;}
+    }
+    @keyframes showHide {
+        0% {width:100%}
+        40% {width:0%}
+        60% {width:0%;}
+        100% {width:100%;}
+    }
+
+
+
+
+
+.blinker{
+   animation: blinker .8s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.data1{
+  margin-top: 10px;
+}
+
+.data3{
+  font-size: 20px;
+  line-spacing: 2px;
+  font-color:#001219;
+  margin-top:10px;
+  text-decoration:none;
+  text-align: center;
+}
+
+
+.dataSet{
+  height:350px;
+   margin-top: 10px;
+  width:550px;
+  border:white;
+  border-width:4px;
+  border-style:solid;
+}
+
+.dataSet:hover {
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  border-color:#caaded;
+  
+    
+}
+
+.link{
+  text-decoration:none;
+  font-size: 20px;
+  line-spacing: 2px;
+  font-color:#001219;
+  margin-top:10px;
+  color:black;
+}
+
+/*change this to change the nav color  */
+.navbar-custom {
+    background-color: #e3e3e3;
+}
+
+/*bar at end of the page  */
+
+  .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+     .fixedFooter{
+        width: 100%;
+        position: fixed;        
+        background: #caaded;
+        padding: 10px 0;
+        color: black;
+    }
+ .fixedFooter{
+        bottom: 0;
+    }
+/*scrollbar  */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 20px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #caaded;
+  border-radius: 10px;
+}
+
+.myInfo{
+  margin: 100px;
+  display: flex;
+  width:600px;
+  justify-content: center;
+  display: inline-block;
+  margin-top:5%;
+}
+
+/*if the grpah is too big i dont think it can appear next to the form  */
+.graphMyInfo{
+  margin-left:30%;
+  margin-bottom:10px;
+  margin-top: 30px;
+  width:300px;
+}
+
+.formMyInfo {
+   margin-top: 1%;
+  width:100px;
+
+  
+}
+
+
+.brains{
+  position:relative;
+
+}
+
+.bigBrain{
+  height:300px;
+display:inline;
+    z-index:2;
+   position: relative;
+  margin-bottom:10px;
+}
+
+
+.bigBrain2{
+  height:200px;
+ display:inline;
+ z-index:1;
+   position: relative;
+   top: -12px;
+  left: -150px;
+ 
+}
+
+
+.survey{
+  border: solid #c8b6ff;
+  text-align:center;
+  margin-left:30%;
+  margin-right:30%;
+  border-width:10px;
+    margin-top:40px;
+}
+
+
+
+.survey1{
+  border: solid #c8b6ff;
+  text-align:center;
+  margin-left:30%;
+  margin-right:30%;
+  padding-bottom:10px;
+  border-width:10px;
+}
+
+
+.quest1{
+  text-align:center;
+  font-family:monospace;
+}
+
+
+.quest2{
+  text-align:center;
+  font-family:monospace;
+}
+
+
+.submit{
+  text-align:center;
+  font-family:monospace;
+   padding:10px;
+}
+
+.theButton{
+  text-align:center;
+}
+
+.submit:hover{
+  background-color:#c8b6ff
+}
+
+
+.persGraph{
+  text-align:center;
+  margin-top:5%;
+}
+
+.userinfo{
+  font-size:20px;
+  font-family:monospace;
+  margin-left:40px;
+  margin-right:40px;
+}
