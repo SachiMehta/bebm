@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Global Stats
+
+{% endblock %}
+
+{% block main %}
+
+ <link href="/static/styles.css" rel="stylesheet">
+
+<header>
+
+  
+<!-- //nav -->
+  <!--the nav has been autoadded through the layout page if that helps-->
+  
+</header>
+
+<main>
+
+
+  <div class="text">
+The graph below features a survey conducted in ten countries with participants between the ages of 16 and 25. They interviewed people responded with their thoughts toward climate anxiety and their government's actions toward climate change.
+  The results are <strong class = "blinker">shocking.</strong>
+    <div class="fadingEffect"></div>
+ </div>
+
+  
+
+    <a class = "link" href="https://www.thelancet.com/action/showFullTableHTML?isHtml=true&tableId=tbl1&pii=S2542-5196%2821%2900278-3"><img class = "dataSet"src="https://lh3.googleusercontent.com/e1dXoQeGpuRhNYZDtb6sCnxL5Z_TzHBqan9JFLFKILn10-ZNTeii7ZKURYP_tIyKpoWtzPNEG8ykTPyzmL9GOIZAL5XhtOkxTDmTtf-K2u_HETSFG_oI0SrL5a1mQwTj7-vOV8Mwmw=w2400"></a>
+  <a class = "link" href="https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(21)00278-3/fulltext#tables"><img class =                                                                                                           "dataSet" src="https://lh3.googleusercontent.com/NGgUB4RyvAn9C7ltanj_k766pvWmm_zdyLDc31XgbUU0Z42bQuvFoutlYtVsjnFzwMj8codjWRaAOGmSdlWuSYBpeLeDqio36JX37dxXk-p3QlwPxHJD-qMlMOJRWEpufWjlYY7h8g=w2400"></a>
+    
+  <h1 class = "data3">Nearly 61.8% of all respondents reported that they were anxious about the threat of climate change. 27% were "extremely worried" about climate change, and 32% were "very worried."  </h1>
+
+<h1>Today's statistics</h1>
+{% if user_rural %} <img src="static/graphs/rural.jpg" alt="Rural global daily mood tracker graph"> {% endif %}
+{% if user_suburb %} <img src="static/graphs/suburb.jpg" alt="Suburban global daily mood tracker graph"> {% endif %}
+{% if user_urban %} <img src="static/graphs/urban.jpg" alt="Urban global daily mood tracker graph"> {% endif %}
+  
+
+
+  
+
+</main>
+
+
+{% endblock %}

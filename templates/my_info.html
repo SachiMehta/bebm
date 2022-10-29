@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block title %}
+My Info 
+{% endblock %}
+
+{% block main %}
+<!--     have to add a form here  -->
+<!-- Adding a profile section with username and -->
+
+<h1>Welcome {{username}}</h1>
+<h2>Daily Surveys</h2>
+
+<!-- relocate survey here to clean up code do later -->
+
+
+{% endblock %}
+
+{% block body %}
+<!--
+
+<div class="myInfo formMyInfo">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeLWPdhWv2HwdaaGpcz2RuYgJUxp51G8gln5h93_Qj8ZmKTYw/viewform?embedded=true" width="640" height="628" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+<div class="myInfo graphMyInfo">
+  <p><strong>Global Answers!</strong></p>
+  <iframe width="1200" height="742" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTZOn_uQvrV_fPuVr1u_zy2wWaS2eX4Z_K_1OeP66i3YjZljzjAHJBmqHb4qZWX1r9hUov5rlMVhSoD/pubchart?oid=1475348773&amp;format=interactive"></iframe>
+</div>-->
+
+<form action="/my_info" method="post">
+
+  <div class = "survey1">
+  <p>
+    <h3 class = "quest1">What environment are you in? </h3>
+    <input class = "option" type="radio" name="environment" id="rural" value="rural" checked> Rural <br>
+    <input class = "option" type="radio" name="environment" id="suburb" value="suburb"> Suburban <br>
+    <input class = "option" type="radio" name="environment" id="urban" value="urban"> Urban <br>
+  </p>
+  </div>
+
+  <div class = "survey">
+  <P>
+    <h3 class = "quest2">How are you feeling today? </h3>
+    <input class = "option" type="radio" name="feeling" id="super_happy" value="super_happy"> Super Happy <br>
+    <input class = "option" type="radio" name="feeling" id="happy" value="happy"> Happy <br>
+    <input class = "option" type="radio" name="feeling" id="meh" value="meh" checked> Meh <br>
+    <input class = "option" type="radio" name="feeling" id="sad" value="sad"> Sad <br>
+    <input class = "option" type="radio" name="feeling" id="super_sad" value="super_sad"> Super Sad <br>
+  </P>
+  </div>
+
+  <div class = "theButton">
+  <p><input class = "submit" type=submit value=Submit {% if submit %} disabled {% endif %}></p>
+  </div>
+</form>
+
+<div class = "persGraph">
+<h2>Personal Graphs</h2>
+{% if user_rural %} <h1 class = "userinfo">Check out your personal graph! Update this everyday to track your mood.</h1> <img src="static/graphs/{{user_id}}rural.jpg" alt="Rural user mood tracker graph"> {% endif %}
+{% if user_suburb %} <h1 class = "userinfo">Check out your personal graph! Update this everyday to track your mood.</h1> <img src="static/graphs/{{user_id}}suburb.jpg" alt="Suburban user mood tracker graph"> {% endif %}
+{% if user_urban %} <h1 class = "userinfo">Check out your personal graph! Update this everyday to track your mood.</h1> <img src="static/graphs/{{user_id}}urban.jpg" alt="Urban user mood tracker graph"> {% endif %}
+</div>
+{% endblock %}
+<!-- add privacy settings if user wants to send to global stats -->
